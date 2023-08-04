@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 17)
 
 include_directories(D:/SFML/include)
 
-add_executable(game1 sc/main.cpp headers/engine.h sc/engine.cpp States/State.cpp States/State.h States/GameState.cpp States/GameState.h States/GameState.h Entities/Entity.cpp Entities/Entity.h)
+add_executable(game1 sc/main.cpp headers/engine.h sc/engine.cpp States/State.cpp States/State.h States/GameState.cpp States/GameState.h States/GameState.h Entities/Entity.cpp Entities/Entity.h Entities/Bullets.cpp Entities/Bullets.h)
 
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cmake_modules")
 

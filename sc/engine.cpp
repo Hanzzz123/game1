@@ -9,6 +9,7 @@ void Engine::initWindow() {
     std::ifstream ifs("Config/window.ini");
 
     std::string title = "None";
+
     sf::VideoMode window_bounds(800,600);
     unsigned frame_rate_limit = 120;
     bool vertical_sync_enabled = false;

@@ -24,8 +24,13 @@ class Entity {
 private:
 
 protected:
-    sf::RectangleShape shape;
+    sf::CircleShape shape;
     float movementSpeed;
+    sf::Vector2f playerCenter;
+    sf::Vector2f mousePosWindow;
+    sf::Vector2f aimDir;
+    sf::Vector2f aimDirNorm;
+
 
 public:
     Entity();
@@ -33,6 +38,8 @@ public:
 
     //Functions
     virtual void move(const float &dt, const float x, const float y);
+    virtual void collision();
+    virtual void shoot();
 
     virtual void update(const float& dt);
     virtual void render(sf::RenderTarget* target);
